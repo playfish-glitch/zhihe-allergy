@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>至和中醫｜過敏衛教</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --brand-red: #6B3D2E;
+    --brand-gold: #9A7339;
+    --brand-dark: #1A1A1A;
+    --brand-muted: #A89070;
+    --brand-bg: #F7F5F0;
+    --brand-accent: #C9A344;
+    --brand-line: #06C755;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Serif TC', serif; background-color: var(--brand-bg); color: var(--brand-dark); min-height: 100vh; }
+  .header { background: var(--brand-red); padding: 28px 20px 24px; text-align: center; position: relative; overflow: hidden; }
+  .header::before { content: ''; position: absolute; top: -40px; right: -40px; width: 160px; height: 160px; border-radius: 50%; background: rgba(201,163,68,0.12); }
+  .header::after { content: ''; position: absolute; bottom: -30px; left: -30px; width: 120px; height: 120px; border-radius: 50%; background: rgba(255,255,255,0.06); }
+  .header-logo { font-size: 13px; color: rgba(255,255,255,0.7); letter-spacing: 3px; font-family: 'Noto Sans TC', sans-serif; font-weight: 300; margin-bottom: 8px; }
+  .header-title { font-size: 28px; color: #fff; font-weight: 600; letter-spacing: 2px; line-height: 1.3; }
+  .header-sub { font-size: 14px; color: var(--brand-accent); margin-top: 6px; letter-spacing: 1px; font-weight: 400; }
+  .divider { display: flex; align-items: center; gap: 12px; padding: 0 24px; margin: 28px 0 20px; }
+  .divider-line { flex: 1; height: 1px; background: var(--brand-muted); opacity: 0.35; }
+  .divider-text { font-size: 13px; color: var(--brand-gold); letter-spacing: 2px; font-weight: 500; white-space: nowrap; }
+  .images-container { padding: 0 16px; display: flex; flex-direction: column; gap: 20px; }
+  .image-card { background: #fff; border-radius: 16px; overflow: hidden; border: 1px solid rgba(154,115,57,0.15); box-shadow: 0 2px 12px rgba(107,61,46,0.08); }
+  .image-card img { width: 100%; display: block; }
+  .image-caption { padding: 12px 16px; font-size: 13px; color: var(--brand-muted); text-align: center; letter-spacing: 1px; font-family: 'Noto Sans TC', sans-serif; font-weight: 300; }
+  .cta-section { padding: 32px 20px 16px; }
+  .cta-title { text-align: center; font-size: 18px; color: var(--brand-red); font-weight: 600; letter-spacing: 2px; margin-bottom: 6px; }
+  .cta-sub { text-align: center; font-size: 13px; color: var(--brand-muted); letter-spacing: 1px; margin-bottom: 24px; font-family: 'Noto Sans TC', sans-serif; font-weight: 300; }
+  .branch-list { display: flex; flex-direction: column; gap: 16px; }
+  .branch-card { background: #fff; border-radius: 16px; border: 1.5px solid rgba(154,115,57,0.2); box-shadow: 0 2px 10px rgba(107,61,46,0.07); overflow: hidden; position: relative; }
+  .branch-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--brand-red); border-radius: 4px 0 0 4px; }
+  .branch-inner { display: flex; align-items: center; }
+  .doctor-photo { width: 100px; min-width: 100px; height: 120px; object-fit: cover; object-position: top center; display: block; }
+  .branch-content { flex: 1; padding: 14px 14px 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+  .doctor-label { font-size: 11px; color: var(--brand-accent); letter-spacing: 1px; font-family: 'Noto Sans TC', sans-serif; font-weight: 500; }
+  .branch-name { font-size: 17px; font-weight: 600; color: var(--brand-red); letter-spacing: 1px; }
+  .branch-spec { font-size: 12px; color: var(--brand-muted); font-family: 'Noto Sans TC', sans-serif; font-weight: 300; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .line-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--brand-line); color: #fff; font-size: 13px; font-weight: 500; padding: 7px 14px; border-radius: 20px; text-decoration: none; font-family: 'Noto Sans TC', sans-serif; width: fit-content; }
+  .line-btn:active { opacity: 0.85; }
+  .footer { margin-top: 36px; padding: 24px 20px; background: var(--brand-red); text-align: center; }
+  .footer-brand { font-size: 15px; color: rgba(255,255,255,0.9); letter-spacing: 2px; font-weight: 500; margin-bottom: 4px; }
+  .footer-slogan { font-size: 12px; color: var(--brand-accent); letter-spacing: 2px; font-weight: 300; font-family: 'Noto Sans TC', sans-serif; }
+  .footer-line { width: 40px; height: 1px; background: rgba(201,163,68,0.4); margin: 14px auto 0; }
+  @media (min-width: 480px) {
+    .header-title { font-size: 34px; }
+    .images-container { padding: 0 24px; }
+    .cta-section { padding: 36px 28px 16px; }
+    .doctor-photo { width: 120px; min-width: 120px; height: 140px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">至和中醫診所</div>
+  <div class="header-title">過敏衛教專區</div>
+  <div class="header-sub">鼻過敏・三伏貼・體質調理</div>
+</div>
+
+<div class="divider">
+  <div class="divider-line"></div>
+  <div class="divider-text">醫師衛教圖解</div>
+  <div class="divider-line"></div>
+</div>
+
+<div class="images-container">
+  <div class="image-card">
+    <img src="186.png" alt="過敏性鼻炎三大類型">
+    <div class="image-caption">過敏性鼻炎三大類型｜葉千榕醫師 · 婦幼保健專家</div>
+  </div>
+  <div class="image-card">
+    <img src="187.png" alt="鼻過敏4大穴位開關">
+    <div class="image-caption">鼻過敏4大穴位｜吳昱衡醫師 · 兒少成長專家</div>
+  </div>
+  <div class="image-card">
+    <img src="191.png" alt="三伏貼 誰適合貼？">
+    <div class="image-caption">三伏貼適合對象｜葉千榕醫師 · 婦幼保健專家</div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="cta-title">立即預約門診</div>
+  <div class="cta-sub">選擇離您最近的院所・找專屬醫師諮詢</div>
+
+  <div class="branch-list">
+
+    <!-- 大寮 - 葉千榕 -->
+    <div class="branch-card">
+      <div class="branch-inner">
+        <img class="doctor-photo" src="dr_daliao.jpg" alt="葉千榕醫師">
+        <div class="branch-content">
+          <div class="doctor-label">推薦醫師｜葉千榕 · 婦幼保健專家</div>
+          <div class="branch-name">大寮院所</div>
+          <div class="branch-spec">調經／助孕／中風／運動傷害</div>
+          <a href="https://lin.ee/tdZSAIDT" class="line-btn" target="_blank" rel="noopener">LINE 預約 ›</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 鳳林 - 吳昱衡 -->
+    <div class="branch-card">
+      <div class="branch-inner">
+        <img class="doctor-photo" src="dr_fenglin.jpg" alt="吳昱衡醫師">
+        <div class="branch-content">
+          <div class="doctor-label">推薦醫師｜吳昱衡 · 兒少成長專家</div>
+          <div class="branch-name">鳳林院所</div>
+          <div class="branch-spec">轉骨／性功能障礙／痠痛／睡眠</div>
+          <a href="https://lin.ee/9ug5xDU" class="line-btn" target="_blank" rel="noopener">LINE 預約 ›</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 新富 - 林怡君 -->
+    <div class="branch-card">
+      <div class="branch-inner">
+        <img class="doctor-photo" src="dr_xinfu.jpg" alt="林怡君醫師">
+        <div class="branch-content">
+          <div class="doctor-label">推薦醫師｜林怡君 · 婦兒調理專家</div>
+          <div class="branch-name">新富院所</div>
+          <div class="branch-spec">月經／轉骨／過敏／更年期</div>
+          <a href="https://lin.ee/7kVxhtB" class="line-btn" target="_blank" rel="noopener">LINE 預約 ›</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-brand">至和中醫診所</div>
+  <div class="footer-slogan">陪伴孩子，守護全家</div>
+  <div class="footer-line"></div>
+</div>
+
+</body>
+</html>
